@@ -7,6 +7,7 @@ class DecisionTree {
   public boolean mNeighbor;
   public boolean mOldMan;
   public boolean mBusActivity;
+  public boolean mBagel;
 
 
 
@@ -53,8 +54,8 @@ class DecisionTree {
   }
   public void pickBagel(int choice) {
     if (choice == 1) {
-      mBusActivity = true;
+      mBagel = true;
       mTimeLoss += 1;
-    } else {mBusActivity = false; }
+    } else {mBagel = false; }
   }
 }
