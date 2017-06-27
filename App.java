@@ -4,6 +4,10 @@ public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
     int choice;
+    int proceed = 1;
+
+    while (proceed ==1) {
+
     System.out.println("GET TO EPICODUS BY 8AM!!");
     System.out.println("A game of ruthlessness, cunning, and wit....");
     System.out.println("Make a series of decisions that will determine whether you get to class on-time or get the dreaded TARDY on your record.");
@@ -139,7 +143,10 @@ public class App {
       System.out.println("Well done - you are wayyy late. It's like 8:30am. Elysia has been looking for you to discuss your last week's project and overall competence in the class. Oh well, atleast you took the time to enjoy the finer things in life.");
     }
 
-
+    System.out.println("----");
+    System.out.println("Press 1 to play again or Press 2 to Quit.");
+    proceed = Integer.parseInt(myConsole.readLine());
+  }
   }
 
   public static int checkValidChoice(int choice) {
